@@ -5,6 +5,8 @@ body, html {
   padding: 0px;
   background-color: #444444;
 }
+
+/* NAVIGATION BAR */
 #nav_bar {
   background-color: #999999;
   align-items: center;
@@ -26,6 +28,7 @@ padding-left: 20px;
   justify-self: center;
 }
 
+/* MAIN BODY */
 #content {
   background-color: #888888;
 
@@ -39,6 +42,10 @@ padding-left: 20px;
 #pet_image {
   background-color: #888888;
 }
+#main_image {
+  height: 100%;
+  width: 100%;
+}
 #pet_description {
   background-color: #555555;
   color: white;
@@ -49,7 +56,7 @@ padding-left: 20px;
   background-color: #444444;
 }
 
-
+/* FOOTER */
 #footer {
   background-color: #777777;
 
