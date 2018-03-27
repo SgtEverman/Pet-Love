@@ -8,7 +8,12 @@ body, html {
 
 /* NAVIGATION BAR */
 #nav_bar {
-  background-color: #999999;
+  /* background-color: linear-gradient(#026c7c, #055864); */
+  /* background: #466368; */
+  background: -webkit-linear-gradient(#025c7c, #034049);
+  background:    -moz-linear-gradient(#025c7c, #034049);
+  background:         linear-gradient(#025c7c, #034049);
+
   align-items: center;
 
   height: 10%;
@@ -30,14 +35,14 @@ padding-left: 20px;
 
 /* MAIN BODY */
 #content {
-  background-color: #888888;
+  background-color: #055864;
 
   height: 80%;
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
 }
 #left_arrow {
-  background-color: #666666;
+  background-color: #034049;
 }
 #pet_image {
   background-color: #888888;
@@ -45,20 +50,23 @@ padding-left: 20px;
 #main_image {
   height: 100%;
   width: 100%;
+  border-radius: 5px;
 }
 #pet_description {
-  background-color: #555555;
+  background-color: #034049;
   color: white;
   padding: 20px;
 
 }
 #right_arrow {
-  background-color: #444444;
+  background-color: #034049;
 }
 
 /* FOOTER */
 #footer {
-  background-color: #777777;
+  background: -webkit-linear-gradient(#034049, #025c7c);
+  background:    -moz-linear-gradient(#034049, #025c7c);
+  background:         linear-gradient(#034049, #025c7c);
 
   height: 10%;
 }
