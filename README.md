@@ -10,3 +10,7 @@ In our web site you will be able to
   - create a profile for you pet with picture, breed, location, and so on
   - converse with the other pet owners
   - create events so that a large group of pet owners and hang out 
+
+Changes also will be made adding concepts from chapters of the Aquino and Gandee book:
+  
+  - There is an addition using Deferreds and Promises, this can be found in file (Add name), (Add how it was used)
