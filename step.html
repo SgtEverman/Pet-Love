@@ -14,6 +14,7 @@
 
 <!-- bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-slider.min.css" rel="stylesheet" type="text/css" />
 
 <!-- mega menu -->
 <link href="css/mega-menu/mega_menu.css" rel="stylesheet" type="text/css" />
@@ -48,6 +49,7 @@
  header -->
 
 <header id="header" class="dark">
+
 <div class="topbar">
   <div class="container">
     <div class="row">
@@ -268,13 +270,13 @@
   <div class="container">
      <div class="row intro-title text-center">
            <div class="col-sm-12">
-        <div class="section-title"><h1 class="pos-r divider">register 1<span class="sub-title">register 1</span></h1></div>
+        <div class="section-title"><h1 class="pos-r divider">step 1 <span class="sub-title">step 1</span></h1></div>
         </div>
                    <div class="col-sm-12 mt-70">
              <ul class="page-breadcrumb">
                 <li><a href="index-default.html"><i class="fa fa-home"></i> Home</a> <i class="fa fa-angle-double-right"></i></li>
-                <li><a href="register.html">Pages</a> <i class="fa fa-angle-double-right"></i></li>
-                <li><span>register 1</span> </li>
+                <li><a href="step.html">Pages</a> <i class="fa fa-angle-double-right"></i></li>
+                <li><span>Step</span> </li>
              </ul>
         </div>
            </div>
@@ -289,72 +291,204 @@
 <!--=================================
  login-->
 
-<section class="login-form register-img dark-bg page-section-ptb" style="background: url(images/pattern/04.png) no-repeat 0 0; background-size: cover;">
-  <div class="container">
-     <div class="row">
-       <div class="col-md-6 col-md-offset-3">
-       <div class="login-1-form register-1-form clearfix text-center">
-       <h4 class="title divider-3 text-white mb-30">sign up</h4>
-                <div class="section-field mb-30">
-              <div class="field-widget">
-               <i class="glyph-icon flaticon-user"></i>
-               <input id="Firstname" type="text" placeholder="First name">
-              </div> 
-            </div>
-            <div class="section-field mb-30">
-              <div class="field-widget">
-               <i class="glyph-icon flaticon-user"></i>
-               <input id="Lastname" type="text" placeholder="Last name">
-              </div> 
-            </div>
-                        <div class="section-field mb-30">
-              <div class="field-widget">
-               <i class="fa fa-envelope-o" aria-hidden="true"></i>
-               <input id="email" class="email" type="email" placeholder="Email" name="email">
-              </div> 
-            </div>
-                        <div class="section-field mb-30">
-              <div class="field-widget">
-               <i class="glyph-icon flaticon-padlock"></i>
-               <input id="Password" class="Password" type="password" placeholder="Password" name="Password">
-              </div> 
-            </div>
-                        <div class="section-field mb-30">
-              <div class="field-widget">
-               <i class="glyph-icon flaticon-padlock"></i>
-               <input id="ConfirmPassword" class="Password" type="password" placeholder="Confirm Password" name="Password">
-              </div> 
-            </div>
-            <div class="section-field mb-30">
-              <div class="field-widget">
-               <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-               <input id="Collagename" type="text" placeholder="Collage name">
-              </div> 
-            </div>
-                        <div class="section-field mb-30">
-              <div class="field-widget">
-               <i class="fa fa-briefcase" aria-hidden="true"></i>
-               <input id="Proffesionname" type="text" placeholder="Proffesion">
-              </div> 
-            </div>
+<section class="page-section-ptb text-white" style="background: url(images/pattern/04.png) no-repeat 0 0; background-size: cover;">
+<div class="container">
+<div class="row">
+<div class="col-md-offset-2 col-md-8">  
+<div class="step-form">
+<div class="stepwizard">
+<div class="stepwizard-row setup-panel">
+<div class="stepwizard-step">
+<a href="#step-1" class="btn btn-circle">1 <span><i class="fa fa-check" aria-hidden="true"></i></span></a>
+<p>Photo</p>
+</div>
+<div class="stepwizard-step">
+<a href="#step-2" class="btn btn-circle" disabled="disabled">2 <span><i class="fa fa-check" aria-hidden="true"></i></span></a>
+<p>about you</p>
+</div>
+<div class="stepwizard-step">
+<a href="#step-3" class="btn btn-circle" disabled="disabled">3 <span><i class="fa fa-check" aria-hidden="true"></i></span></a>
+<p>preferences</p>
+</div>
+</div>
+</div>
 
-            <div class="clearfix"></div>
-            <div class="section-field text-uppercase text-center mt-20">
-            <a class="button  btn-lg btn-theme full-rounded animated right-icn" href="step.html"><span>next<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></a>
-            </div><div class="clearfix"></div>
-            <div class="section-field mt-20 text-center text-white">
-            <p class="lead mb-0">Have an account? <a class="text-white" href="login.html"><u>Sign In!</u> </a></p>
-            </div>
+<form method="post" class="text-center mt-30">
+<div class="row setup-content" id="step-1">
+<div class="col-md-12">
+<h4 class="title divider-3 mb-50">Photo</h4>
+<div class="row row-eq-height">
+<div class="col-md-offset-3 col-md-6">
+<div class="form-group">
+<div class="row mb-10 row-eq-height">
+<div class="col-sm-8 pr-15">
+<img class="img-center full-width" src="images/step/01.png" alt="">
+</div>
+<div class="col-sm-4">
+<div class="row">
+<div class="col-sm-12 mb-30">
+<img class="img-center" src="images/step/02.png" alt="">
+</div>
+<div class="col-sm-12">
+<img class="img-center" src="images/step/03.png" alt="">
+</div>
+</div>
+</div>
+</div>
+
+<div class="row mt-30">
+<div class="col-sm-4">
+<img class="img-center" src="images/step/04.png" alt="">
+</div>
+<div class="col-sm-4">
+<img class="img-center" src="images/step/05.png" alt="">
+</div>
+<div class="col-sm-4">
+<img class="img-center" src="images/step/06.png" alt="">
+</div>
+</div>
 
 </div>
-       </div>
-          </div>
-        </div>
 
+<div class="form-group">
+<div class="step-social mt-30 mb-20 text-center clearfix">
+<ul class="list-inline text-capitalize">
+<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>import</a></li>
+<li><a href="#"><i class="fa fa-file-image-o" aria-hidden="true"></i> import</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="profile-info">
+<p class="mb-0"><i class="fa fa-info-circle" aria-hidden="true"></i> profile with photos get 10 times as many responses</p>
+</div>
+</div>
+<div class="form-group mb-0">
+<a class="button btn-theme full-rounded btn nextBtn btn-lg mt-20 animated right-icn"><span>Next<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></a>
+</div>
+</div>
+</div>
+<div class="row setup-content" id="step-2">
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-offset-2 col-md-8 text-left text-capitalize text-white">
+<div class="form-group">
+<label class="title divider-3 mb-30">gender</label>
+<div class="row">
+<div class="col-sm-4">
+<div class="radio">
+<input name="group2" checked="checked" id="radio1" type="radio">
+<label for="radio1">female</label>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="radio">
+<input name="group2" id="radio2" type="radio">
+<label for="radio2">male</label>
+</div>
+</div>
+</div>
+
+<div class="form-group">
+<label class="title divider-3 mb-30">about me</label>
+<textarea class="form-control" rows="3"></textarea>
+</div>
+
+<div class="form-group">
+<label class="title divider-3 mb-30">location access</label>
+<div class="checkbox">
+<input name="group2" id="check1" type="checkbox">
+<label for="check1">allow to access your location</label>
+</div>
+</div>
+
+<div class="form-group text-center">
+<div class="profile-info">
+<p class="mb-0"><i class="fa fa-info-circle" aria-hidden="true"></i> by clicking submit you are agreeing to our terms and conditions of use.</p>
+</div>
+</div>
+
+<div class="form-group text-center">
+<a class="button btn-theme full-rounded btn nextBtn btn-lg mt-20 animated right-icn"><span>register<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row setup-content" id="step-3">
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-offset-2 col-md-8 text-left text-capitalize text-white">
+<div class="form-group">
+<label class="title divider-3 mb-30">intrested in</label>
+<div class="row">
+<div class="col-sm-4">
+<div class="radio">
+<input name="group3" checked="checked" id="radio3" type="radio">
+<label for="radio3">female</label>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="radio">
+<input name="group3" id="radio4" type="radio">
+<label for="radio4">male</label>
+</div>
+</div>
+</div>
+
+<div class="form-group">
+<label class="title divider-3 mb-60">age preference</label>
+<div>
+<input id="slider1" class="range-slider" data-slider-id='ex1Slider1' type="text" data-slider-min="0" data-slider-max="30" data-slider-step="1" data-slider-value="18"/>
+<input id="slider2" class="range-slider" data-slider-id='ex1Slider2' type="text" data-slider-min="30" data-slider-max="100" data-slider-step="1" data-slider-value="30"/>
+
+</div>
+</div>
+
+<div class="form-group mt-20">
+<label class="title divider-3 mb-60">distance preference (miles)</label>
+<div>
+<input id="slider3" class="range-slider" data-slider-id='ex1Slider1' type="text" data-slider-min="0" data-slider-max="35" data-slider-step="1" data-slider-value="30"/>
+<input id="slider4" class="range-slider" data-slider-id='ex1Slider2' type="text" data-slider-min="36" data-slider-max="200" data-slider-step="1" data-slider-value="160"/>
+</div>
+</div>
+
+<div class="form-group">
+<label class="title divider-3 mb-20">location access</label>
+<div class="checkbox">
+<input name="check2" id="check2" type="checkbox">
+<label for="check2">allow to access your location</label>
+</div>
+</div>
+
+<div class="form-group text-center">
+<div class="profile-info">
+<p class="mb-0"><i class="fa fa-info-circle" aria-hidden="true"></i> by clicking submit you are agreeing to our terms and conditions of use.</p>
+</div>
+</div>
+
+<div class="form-group mb-0 text-center">
+<a class="button btn-theme full-rounded btn btn-lg mt-20 animated right-icn"><span>submit<i class="glyph-icon flaticon-hearts" aria-hidden="true"></i></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div> 
+</div>
+</div>
 </section>
 
 <!--=================================
  login-->
+
 
 
 <!--=================================
@@ -401,6 +535,7 @@ footer -->
 
 <!-- bootstrap -->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
 
 <!-- appear -->
 <script type="text/javascript" src="js/jquery.appear.js"></script>
@@ -410,6 +545,7 @@ footer -->
 
 <!-- custom -->
 <script type="text/javascript" src="js/custom.js"></script>
+
 
 </body>
 </html>
