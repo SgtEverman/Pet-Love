@@ -13,4 +13,4 @@ In our web site you will be able to
 
 Changes also will be made adding concepts from chapters of the Aquino and Gandee book:
   
-  - There is an addition using Deferreds and Promises, this can be found in file (Add name), (Add how it was used)
+  - There is an addition using Deferreds and Promises, this can be found in file index.html, with the searchbar mimicing chapter 14 with its untyped variables being filled in by a user and later functions running off what the user input regardless of type.
