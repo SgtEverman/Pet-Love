@@ -109,6 +109,9 @@ padding-left: 20px;
 #pet_image {
 
 }
+.pets_icon:hover {
+  cursor: pointer;
+}
 #main_image {
   max-height:100%;
   max-width: 70%;

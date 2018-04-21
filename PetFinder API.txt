@@ -1,5 +1,0 @@
-key
-1b535a8e0c411309891edcc6df1aab13
-secret
-4cc18047d565b803bf983a7aeb1c1810
-PetFinder

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- sets the title that appears on the tab within the browser -->
+    <title>Pet Love</title>
+    <!-- links to the css -->
+    <link rel="stylesheet" href="main.css">
+    <!-- links to the icon that appears on the tab within the browser -->
+    <link rel="icon" href="resources/icon.png">
+    <!--  -->
+    <style>
+      /* changes the nav option for the current page to pink */
+      #option4 {
+        color: pink;
+      }
+      #nav_bar {
+        height: 23%;
+      }
+      #footer {
+        height: 2%;
+      }
+      #content2 {
+        font-size: 14px;
+        height: 74%;
+        background: rgba(0, 0, 0, 0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation (top) -->
+    <div id="nav_bar">
+      <a href="index.html">
+        <div id="logo">
+          <!-- img if we decide to add one next to the Pet Love text -->
+          <!-- <img src="resources/icon.png" height="70px" width="70px"> -->
+          Pet Love
+        </div>
+      </a>
+      <a href="find.html">
+        <div id="option1">
+          Find
+        </div>
+      </a>
+      <a href="owner.html">
+        <div id="option2">
+          Your Pets
+        </div>
+      </a>
+      <a href="about.html">
+        <div id="option3">
+          About
+        </div>
+      </a>
+      <a href="register.html">
+        <div id="option4">
+          Register
+        </div>
+      </a>
+    </div>
+    <!-- content (middle) -->
+    <div id="content2">
+      <div id="content_inner">
+        <!-- titles and textboxs for user's information -->
+        <h3 style="color:pink">First Name</h3>
+        <input type="text">
+        <h3 style="color:pink"><br>Last Name</h3>
+        <input type="text">
+        <h3 style="color:pink"><br>E-mail</h3>
+        <input type="text">
+        <h3 style="color:pink"><br>Phone Number (optional)</h3>
+        <input type="text">
+        <br><br>
+        <button>submit</button>
+      </div>
+    </div>
+    <!-- footer (bottom, unused) -->
+    <div id="footer">
+    </div>
+  </body>
+</html>

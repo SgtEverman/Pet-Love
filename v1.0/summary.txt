@@ -1,0 +1,202 @@
+CONTENTS
+...overview
+...known problems
+...index.html
+...find.html
+...find.js
+...owner.html(your pets)
+...owner.js
+...about.html/register.html
+...main.css
+
+____________________________OVERVIEW___________________________________
+WHAT PETLOVE DOES
+
+  -Its use is just to browse random pets up for adoption in the United States.
+  -The website is split into 5 pages.  
+    *The 'Pet Love' page is just a landing page and
+     serves no functionality.
+    *The 'Find' page allows users to see random pets up for 
+     adoption across the United States.  It provides an image, name, breed, location and 
+     description.  Also on the find page are two active buttons that lead to javascript 
+     scripts.  One is the heart next to the pets image that saves the animals ID number 
+     and sends it to the 'Your Pets' page.  The second button is the arrow to the right on the 
+     page that finds a new random pet and loads it.
+    *The 'Your Pets' page simple loads the saved pets from clicking the heart button on the 'Find' 
+     page.  By clicking one of the pets that load here, it will re-open the 'Find' page and load 
+     the selected pet.
+    *The 'About' page is just a page to put our credentials for the project.
+    *The 'Register' page is for inputting user information, it serves no functionality because
+     that would involve setting up a server.
+
+_________________________KNOWN PROBLEMS________________________________
+PROBLEMS TO BE FIXED BEFORE MONDAY
+
+  -'Your Pets' page does not always load all pet images (asynchrious problem).
+  -When selecting a pet on the 'Your Pets' page, it will sometimes load the pet
+   on the 'Find' page and immediately find and load a new pet afterwards (asynchrious problem).
+  -Not enough animations yet.
+  -The bodies of the html pages are broken down into three parts, navigation-content-footer. 
+   for some of the pages I changed the content div to content2 to add seperate styling.  I will 
+   fix it to flow more this weekend.
+  -Change the owner.html name to yourPets.html, as well as all links to it.
+
+
+PROBLEMS OUTSIDE THE SCOPE OF THIS CLASS
+
+-No server set up to save the information from the 'Register' page.
+-Project is not scalable for smaller screen sizes such as a phone.
+
+
+____________________________INDEX.HTML___________________________________
+INDEX.HTML LINKS TO OTHER FILES
+
+  -Links to main.css for styles
+
+
+INDEX.HTML DOM STRUCTURE OF BODY
+
+  *nav div
+   -contains divs and a-links for the navigation options.
+
+  *content2 div
+   -contains a div to contain the landing page's phrase.
+
+  *footer div
+   -unused.
+
+SUMMARY
+  This is the simplest page of them all.  It breaks the page into three divs
+  (nav, content2, footer).  The nav holds all the navigation names and links
+  using a grid layout.  The content2 holds a div to put the landing pages catch
+  phrase.  Lastly, the footer is there but not used.
+
+
+____________________________FIND.HTML___________________________________
+FIND.HTML LINKS TO OTHER PAGES
+
+  -Links to main.css
+  -Links to find.js (at end of the body)
+
+FIND.HTML DOM STRUCTURE OF BODY
+
+  *nav div
+    -remains the same.
+
+  *content div
+    -holds seperate divs in grid style (left, image, pet details, description, right).
+      -the divs have img and span place holders for 'Find.js' to update.
+      -the left div is unused for now.
+
+  *footer div
+    -unused.
+
+SUMMARY
+  This is the bread and butter of the website.  This page's content div contains seperate divs 
+  in grid style to contain divs and place holders for the pets information.  The heart and arrow buttons 
+  have animations to pulse them, as well as onClick calls in the 'Find.js' file.
+
+
+_____________________________FIND.JS____________________________________
+FIND.JS LINKS TO OTHER PAGES
+
+  -connects to the Petfinder's API
+  -connects to the browsers localStorage
+
+FIND.JS LINKS FROM OTHER PAGES
+
+  -'Find.html' calls this script
+
+FIND.JS STRUCTURE
+
+  *variables
+    -just a bunch of variables to grab html elements and store them in javascript variables.
+
+  *regular processes
+    -calls the Petfinder's API and loads a pet right after variables are stored.
+
+  *methods
+    -loadPet
+      -function that is called by the API when it finishes sending the data.
+      -loads all the data into the html elements on 'Find.html'.
+    -onClick
+      -onclick functions for the heart and arrows.
+
+SUMMARY
+  This script is run after the 'Find.html' page is loaded.  It makes calls to the Petfinder's
+  API and then injects it into the html page.  The heart.onclick function saves the current pets 
+  ID number to the browsers local storage, and the arrow.onclick calls the API again.
+
+
+_____________________________OWNER.HTML____________________________________
+OWNER.HTML LINKS TO OTHER PAGES
+
+  -Links to main.css
+  -Links to owner.js (at end of the body)
+
+OWNER.HTML DOM STRUCTURE OF BODY
+
+  *nav div
+    -remains the same.
+
+  *content div
+    -an empty div for the 'owner.js' script to inject images into.
+
+  *footer div
+    -unused.
+
+SUMMARY
+  This page is the same as the landing page, the content div is left empty to allow the 'owner.js' to
+  inject pet photos in there that have been saved to the browser's localStorage.
+  
+
+_____________________________OWNER.JS____________________________________
+OWNER.JS LINKS TO OTHER PAGES
+
+  -connects to the Petfinder's API
+  -connects to the browsers localStorage
+
+OWNER.JS LINKS FROM OTHER PAGES
+
+  -'owner.html' calls this script
+
+OWNER.JS STRUCTURE
+
+  *variables
+    -an array that stores petIDs to later be used in API calls.
+    -the petIDs are retrieves from the browser's localStorage after 'find.js' put them there.
+
+  *regular processes
+    -loops through the petIDs and calls the API on each one.
+
+  *methods
+    -addPet
+      -the callback function for the API on this script.
+      -makes an image element using the pets information.
+        -puts an onclick link back to 'find.html'.
+
+SUMMARY
+  This is the simpler script, all it does is gather the petIDs from the browser's localStorage 
+  and uses a loop to put them into image elements and inject them into the 'owner.html' content div.  
+  It also attaches an onclick function to each on that sends stores the pet's ID in local storage, and loads 
+  'find.html'.  'find.js' can then check for the petID and load it.
+
+
+_______________________ABOUT.HTML/REGISTER.HTML_______________________________
+
+  -ABOUT.HTML
+    -the same as the landing page, but the content div is darker and it contains project information
+
+  -REGISTER.HTML
+    -exact same as the ABOUT.HTML but it ask for user information using <input>s.
+
+
+____________________________MAIN.CSS__________________________________________
+
+  -This file is ugly, to save time I put everything into one css file that controls most of the 
+   html styling.  I might break it down this weekend, but some of the things it includes are...
+      -styling for the text
+      -styling for images
+      -styling for divs using grids mostly
+      -animations for the find.html page
+      -cursor changes when the cursor is hovering the heart/arrow/pet image on the Your Pets page
