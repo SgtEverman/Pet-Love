@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- sets the title that appears on the tab within the browser -->
     <title>Pet Love</title>
+    <!-- links to the css -->
     <link rel="stylesheet" href="main.css">
+    <!-- links to the icon that appears on the tab within the browser -->
     <link rel="icon" href="resources/icon.png">
-
+    <!--  -->
     <style>
+      /* changes the nav option for the current page to pink */
       #option1 {
         color: pink;
       }
     </style>
   </head>
   <body>
-
-
+    <!-- navigation (top) -->
     <div id="nav_bar">
       <a href="index.html">
         <div id="logo">
@@ -27,7 +30,7 @@
       </a>
       <a href="owner.html">
         <div id="option2">
-          Your Pet
+          Your Pets
         </div>
       </a>
       <a href="about.html">
@@ -35,34 +38,51 @@
           About
         </div>
       </a>
+      <a href="register.html">
+        <div id="option4">
+          Register
+        </div>
+      </a>
     </div>
-
+    <!-- content (middle) -->
     <div id="content">
+      <!-- place holder for a left arrow, unused -->
       <div id="left_arrow">
+        <!-- if we decide to put a left arrow on this page, its already here -->
         <!-- <div class="arrow_container"><image class ="arrow_img" src="resources/arrow_left_3.png"></div> -->
       </div>
+      <!--the pets image that appears on the page  -->
       <div id="pet_image">
-        <image id="main_image" src="resources/dog.jpg">
+        <image id="main_image">
+          <img id="heart" height="50px" width="50px" src="resources/heart.png">
       </div>
+      <!--the pets details that appear on the page  -->
       <div id="pet_description">
-        <h2>breed</h2>
-        *pet breed here, use javascript to update*
+        <h2>Name</h2>
+        <span id="petName">*pet breed here, use javascript to update*</span>
         <hr>
-        <h2>color</h2>
-        *pet color here, use javascript to update*
+        <h2>Breed</h2>
+        <span id="petBreed">*pet color here, use javascript to update*</span>
         <hr>
-        <h2>description</h2>
-        *pet description here, use javascript to update*
+        <h2>Location</h2>
+        <span id="petLocation">*pet description here, use javascript to update*</span>
       </div>
+      <!--the description area that appears on the page  -->
+      <div id="pet_summary">
+        <h2>Description</h2>
+        <span id="petDescription">*pet description here, use javascript to update*</span>
+      </div>
+      <!-- arrow that appears on the right side of the page -->
       <div id="right_arrow">
-        <!-- <div class="arrow_container"><image class ="arrow_img" src="resources/arrow_right_3.png"></div> -->
+        <div class="arrow_container"><image class ="arrow_img" src="resources/arrow.png"></div>
       </div>
     </div>
-
+    <!-- footer (bottom, unused for now) -->
     <div id="footer">
-
     </div>
 
-
+    <!-- links to the javascript scripts and imports jquery first -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="javascript/find.js"></script>
   </body>
 </html>

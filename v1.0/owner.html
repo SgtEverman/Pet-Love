@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- page title on the browsers tab -->
     <title>Pet Love</title>
+    <!-- link for the pages css -->
     <link rel="stylesheet" href="main.css">
+    <!-- link for the icon that appears on the browsers tab -->
     <link rel="icon" href="resources/icon.png">
-
+    <!-- css that only applies to this page -->
     <style>
+      /* changes the color of the Your Pets on the navigation bar to pink */
       #option2 {
         color: pink;
       }
     </style>
-
   </head>
   <body>
-
-
+    <!-- navigation -->
     <div id="nav_bar">
       <a href="index.html">
         <div id="logo">
+          <!--  -->
           <!-- <img src="resources/icon.png" height="70px" width="70px"> -->
           Pet Love
         </div>
@@ -29,7 +32,7 @@
       </a>
       <a href="owner.html">
         <div id="option2">
-          Your Pet
+          Your Pets
         </div>
       </a>
       <a href="about.html">
@@ -37,37 +40,22 @@
           About
         </div>
       </a>
+      <a href="register.html">
+        <div id="option4">
+          Register
+        </div>
+      </a>
+    </div>
+    <!-- content -->
+    <!-- IMPORTANT DIV, owner.js injects elements here -->
+    <div id="content3">
     </div>
 
-    <div id="content2">
-      <div id="content_inner">
-        Friendship is a few clicks away!
-      </div>
-      <!-- <div id="left_arrow">
-        <div class="arrow_container"><image class ="arrow_img" src="resources/arrow_left_3.png"></div>
-      </div>
-      <div id="pet_image">
-        <image id="main_image" src="resources/dog.jpg">
-      </div>
-      <div id="pet_description">
-        <h2>breed</h2>
-        *pet breed here, use javascript to update*
-        <hr>
-        <h2>color</h2>
-        *pet color here, use javascript to update*
-        <hr>
-        <h2>description</h2>
-        *pet description here, use javascript to update*
-      </div>
-      <div id="right_arrow">
-        <div class="arrow_container"><image class ="arrow_img" src="resources/arrow_right_3.png"></div>
-      </div> -->
-    </div>
-
+    <!-- footer (bottom, unused) -->
     <div id="footer">
-
     </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="javascript/owner.js"></script>
   </body>
 </html>
